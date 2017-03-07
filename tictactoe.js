@@ -5,12 +5,12 @@ var gameBoard = [
   [0, 1, 2],
   [0, 1, 2],
   [0, 1, 2]
-]
+];
 
 var board = [
-  ["", "", ""],
-  ["", "", ""],
-  ["", "", ""]
+  [],
+  [],
+  []
 ];
 
 var testBoard = [
@@ -30,8 +30,8 @@ for (var i = 0; i < box.length; i++) {
     if (!testBoard[x][y]) {
       this.className += color;
       color = color === " red" ? " blue" : " red";
-      this.board[x][y] = player;
-      player = player === "X" ? "O" : "X"
+      player = player === "X" ? "O" : "X";
+      this.innerHTML = player;
       testBoard[x][y] = true;
     }
   }
@@ -39,8 +39,8 @@ for (var i = 0; i < box.length; i++) {
 
 console.log(board);
 
-var button = document.getElementsByTagName('button')
+var button = document.getElementsByTagName('button');
 
 function resetGame() {
   window.location.reload();
-}
+};
