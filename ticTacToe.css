@@ -1,0 +1,21 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: grey;
+  display: inline-block;
+  text-align: center;
+}
+
+.board {
+  margin: auto;
+  width: 325px;
+  height: 325px;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
