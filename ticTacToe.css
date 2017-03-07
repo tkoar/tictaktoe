@@ -1,7 +1,17 @@
+h1 {
+  text-align: center;
+  font-family: Lucida, monospace;
+  color: #2B3856;
+}
+
+body {
+  background-color: #98AFC7;
+}
+
 .box {
   height: 100px;
   width: 100px;
-  background-color: grey;
+  background-color: #566D7E;
   display: inline-block;
   text-align: center;
 }
@@ -18,4 +28,18 @@
 
 .blue {
   background-color: blue;
+}
+
+footer {
+  text-align: center;
+}
+
+button {
+  font-size: 14;
+  background-color: #2B3856;
+  color: white;
+  font-family: Lucida, monospace;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
 }
