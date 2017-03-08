@@ -1,16 +1,10 @@
 var box = document.getElementsByClassName('box');
 console.log(box);
 
-var gameBoard = [
-  [0, 1, 2],
-  [0, 1, 2],
-  [0, 1, 2]
-];
-
 var board = [
-  [],
-  [],
-  []
+  [null, null, null],
+  [null, null, null],
+  [null, null, null]
 ];
 
 var testBoard = [
@@ -20,6 +14,9 @@ var testBoard = [
 ];
 
 var player = "X";
+var p1 = "X";
+var p2 = "0";
+
 
 var color = " red";
 
@@ -32,12 +29,15 @@ for (var i = 0; i < box.length; i++) {
       color = color === " red" ? " blue" : " red";
       player = player === "X" ? "O" : "X";
       this.innerHTML = player;
+      board[x][y] = player;
       testBoard[x][y] = true;
     }
   }
 }
 
 console.log(board);
+
+
 
 var button = document.getElementsByTagName('button');
 
