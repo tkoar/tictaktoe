@@ -14,6 +14,7 @@ body {
   background-color: #566D7E;
   display: inline-block;
   text-align: center;
+  font-size: 32px;
   vertical-align: top;
   font-family: Lucida, monospace;
   margin: 2px;
@@ -26,11 +27,11 @@ body {
 }
 
 .red {
-  background-color: red;
+  background-color: #FFB233;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #33CFFF;
 }
 
 footer {
