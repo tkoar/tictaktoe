@@ -22,6 +22,9 @@ if (x % 2 === 0) {
 
 var player = y;
 
+var playerX = "X";
+var playerO = "O";
+
 var color = " red";
 
 for (var i = 0; i < box.length; i++) {
@@ -31,7 +34,7 @@ for (var i = 0; i < box.length; i++) {
     if (!testBoard[x][y]) {
       this.className += color;
       color = color === " red" ? " blue" : " red";
-      player = player === "X" ? "O" : "X";
+      player = player === playerX ? playerO : playerX;
       this.innerHTML = player;
       board[x][y] = player;
       testBoard[x][y] = true;
@@ -44,29 +47,29 @@ console.log(board);
 
 function checkForTicTacToe(board) {
   for (var i = 0; i < 3; i++) {
-    if (board[i][0] === "X" && board[i][1] === "X" && board[i][2] === "X") {
-      alert("congrats, player X! you won!");
+    if (board[i][0] === playerX && board[i][1] === playerX && board[i][2] === playerX) {
+      alert("congrats, " + playerX + "! you won!");
       break;
-    } else if (board[0][i] === "X" && board[1][i] === "X" && board[2][i] === "X") {
-      alert("congrats, player X! you won!");
+    } else if (board[0][i] === playerX && board[1][i] === playerX && board[2][i] === playerX) {
+      alert("congrats, " + playerX + "! you won!");
       break;
-    } else if (board[0][0] === "X" && board[1][1] === "X" && board[2][2] === "X") {
-      alert("congrats, player X! you won!");
+    } else if (board[0][0] === playerX && board[1][1] === playerX && board[2][2] === playerX) {
+      alert("congrats, " + playerX + "! you won!");
       break;
-    } else if (board[0][2] === "X" && board[1][1] === "X" && board[2][0] === "X") {
-      alert("congrats, player X! you won!");
+    } else if (board[0][2] === playerX && board[1][1] === playerX && board[2][0] === playerX) {
+      alert("congrats, " + playerX + "! you won!");
       break;
-    } else if (board[i][0] === "O" && board[i][1] === "O" && board[i][2] === "O") {
-      alert("congrats, player O! you won!");
+    } else if (board[i][0] === playerO && board[i][1] === playerO && board[i][2] === playerO) {
+      alert("congrats, " + playerO + "! you won!");
       break;
-    } else if (board[0][i] === "O" && board[1][i] === "O" && board[2][i] === "O") {
-      alert("congrats, player O! you won!");
+    } else if (board[0][i] === playerO && board[1][i] === playerO && board[2][i] === playerO) {
+      alert("congrats, " + playerO + "! you won!");
       break;
-    } else if (board[0][0] === "O" && board[1][1] === "O" && board[2][2] === "O") {
-      alert("congrats, player O! you won!");
+    } else if (board[0][0] === playerO && board[1][1] === playerO && board[2][2] === playerO) {
+      alert("congrats, " + playerO + "! you won!");
       break;
-    } else if (board[0][2] === "O" && board[1][1] === "O" && board[2][0] === "O") {
-      alert("congrats, player O! you won!");
+    } else if (board[0][2] === playerO && board[1][1] === playerO && board[2][0] === playerO) {
+      alert("congrats, " + playerO + "! you won!");
       break;
     }
   }
