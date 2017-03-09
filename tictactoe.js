@@ -14,12 +14,11 @@ var testBoard = [
 ];
 
 var x = (Math.floor((Math.random() * 10) + 1));
-
 if (x % 2 === 0) {
-    var y = "X";
-  } else {
-    y = "O";
-  }
+  var y = "O";
+} else {
+  y = "X";
+}
 
 var player = y;
 
