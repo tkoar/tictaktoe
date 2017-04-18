@@ -1,4 +1,5 @@
 var box = document.getElementsByClassName('box');
+
 console.log(box);
 
 var board = [
@@ -13,7 +14,7 @@ var testBoard = [
   [false, false, false]
 ];
 
-var x = (Math.floor(Math.random() * 10);
+var x = Math.floor(Math.random() * 10);
 if (x % 2 === 0) {
   var y = "O";
 } else {
